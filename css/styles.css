@@ -2,7 +2,7 @@ html{
     font-size: 62.5%;
 }
 body{
-    background: gold;
+    background: rgb(233, 230, 213);
     font-size: 2.4rem;
     line-height: 1.5rem;
 }
@@ -37,6 +37,8 @@ h3{
 }
 p{
     margin-top: 0;
+    font-size: small;
+
 }
 @media screen and (min-width: 1024px) {
     body{
@@ -52,4 +54,22 @@ p{
         font-size: 2.4rem;
     }
 }
+a{
+    text-decoration: none;
+}
+.link-arrow{
+    color: var(--color-accent);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.link-arrow::after{
+    content: '-->';
+}
+.link-arrow:hover:after{
+    margin-left: 10px;
+    transition: margin 0.2s;
+    @media screen and (min-width: 1024px) {
+        font-size: 1.5rem;
+    }
 }
